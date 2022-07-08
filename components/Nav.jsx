@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 export default function Nav() {
   function openMenu() {
@@ -12,7 +13,7 @@ export default function Nav() {
   return (
     <nav>
       <a href="/">
-        <img src="../assets/logo.png"></img>
+        <img src={Logo}></img>
       </a>
       <ul className="nav__links">
         <li className="nav__list">
