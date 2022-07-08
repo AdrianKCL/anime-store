@@ -56,7 +56,7 @@ export default function Nav() {
             </Link>
           </li>
           <li className="menu__list">
-            <Link to="/browse" className="menu__link" onClick={closeMenu}>
+            <Link to="/anime" className="menu__link" onClick={closeMenu}>
               Browse Animes
             </Link>
           </li>
