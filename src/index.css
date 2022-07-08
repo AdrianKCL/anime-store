@@ -363,6 +363,25 @@ main {
   text-align: center;
   height: 120px;
 }
+@media (max-width: 1240px) {
+  .anime__wrapper {
+    width: calc(100% / 3);
+  }
+  .anime__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .anime__wrapper {
+    width: 50%;
+  }
+  .anime__list {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 768px) {
   .btn__menu {
     display: block;
@@ -372,5 +391,12 @@ main {
   }
   .header__title {
     font-size: 40px;
+  }
+  .anime__list {
+    display: flex;
+    justify-content: center;
+  }
+  .anime__wrapper {
+    width: 100%;
   }
 }
