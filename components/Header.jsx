@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Image from "../assets/headerimg.svg";
+import HeaderImage from "../assets/headerimg.svg";
 
 export default function Header(props) {
   const [loading, setLoading] = useState(false);
@@ -44,7 +44,7 @@ export default function Header(props) {
           </button>
         </div>
       </div>
-      <img src={Image} className="header__img"></img>
+      <img src={HeaderImage} className="header__img"></img>
     </header>
   );
 }
