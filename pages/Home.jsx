@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Header from "../assets/headerimg.svg";
 
 export default function ({ search, setSearch, setAnimeList }) {
   const [loading, setLoading] = useState(false);
@@ -57,7 +58,7 @@ export default function ({ search, setSearch, setAnimeList }) {
             </button>
           </div>
         </div>
-        <img src="../assets/headerimg.svg" className="header__img"></img>
+        <img src={Header} className="header__img"></img>
       </header>
     </div>
   );
