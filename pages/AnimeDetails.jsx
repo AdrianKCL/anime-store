@@ -28,7 +28,7 @@ export default function AnimeDetails() {
   return (
     <div className="details__container">
       <Nav />
-      <main>
+      <main className="details__main">
         <Link to="/anime">
           <button className="details__button">
             <h2 className="back__button">
