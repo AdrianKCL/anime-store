@@ -14,7 +14,7 @@ export default function AnimeCard({ anime }) {
           {/* <Link to={`/details/${anime.mal_id}`}> */}
           <button
             className="anime__button"
-            onClick={`/details/${anime.mal_id}`}
+            onClick={navigate(`/details/${anime.mal_id}`)}
           >
             See details
           </button>
