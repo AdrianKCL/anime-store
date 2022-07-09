@@ -479,7 +479,7 @@ main {
     width: 100%;
   }
   .header__search--input::placeholder {
-    font-size: 16px;
+    font-size: 12px;
   }
   .header__title--overlay {
     margin-bottom: 16px;
