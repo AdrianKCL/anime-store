@@ -487,11 +487,7 @@ main {
   header {
     margin: 0;
   }
-  .header__search--input {
-    margin-top: 16px;
-    padding: 0 24px;
-    width: 40%;
-  }
+
   .selected__anime {
     padding: 0;
     flex-direction: column;
