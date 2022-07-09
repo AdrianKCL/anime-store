@@ -19,8 +19,8 @@ export default function AnimeDetails() {
         );
         console.log(data.data);
         setAnimeDetails(data.data);
-        // setAnimeImg(data.data.images.jpg);
-        // setDate(data.data.aired);
+        setAnimeImg(data.data.images.jpg);
+        setDate(data.data.aired);
       },
     [mal_id]
   );
