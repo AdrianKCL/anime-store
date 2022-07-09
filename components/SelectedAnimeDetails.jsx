@@ -12,6 +12,7 @@ export default function SelectedAnimeDetails({ animeDetails, animeImg, date }) {
           <div className="anime__selected--year">
             {date.string} • {animeDetails.status}
           </div>
+
           <div className="anime__selected--popularity">
             <h2>Popularity rank</h2>
             <span>{animeDetails.popularity}</span>
