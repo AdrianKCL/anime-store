@@ -32,7 +32,7 @@ export default function App() {
               />
             }
           />
-          <Route path="/details" />
+          <Route path="/details" element={<AnimeDetails />} />
         </Routes>
       </div>
     </Router>

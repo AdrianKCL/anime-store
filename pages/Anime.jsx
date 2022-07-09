@@ -11,7 +11,6 @@ export default function ({ search, setSearch, animeList, setAnimeList }) {
     const { data } = await axios.get(
       `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=8`
     );
-
     setLoading(false);
     setAnimeList(data.results);
   }
@@ -60,7 +59,11 @@ export default function ({ search, setSearch, animeList, setAnimeList }) {
       <main>
         <div className="anime__list">
           {loading
-            ? new Array(10).fill(0).map((_, index) => <div key={index}></div>)
+            ? new Array(8).fill(0).map((_, index) => (
+                <div className="anime__wrapper" key={index}>
+                  <div className="anime__card--skeleton"></div>
+                </div>
+              ))
             : animeList.map((anime) => (
                 <AnimeCard anime={anime} key={anime.mal_id} />
               ))}
