@@ -20,7 +20,7 @@ export default function ({ search, setSearch, setAnimeList }) {
     const { data } = await axios.get(
       `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=8`
     );
-
+    console.log(data.results);
     setAnimeList(data.results);
   }
   return (

@@ -322,6 +322,7 @@ main {
   max-width: 1200px;
   padding: 24px;
   width: 100%;
+  background-color: #f5f5f5;
 }
 .anime__list {
   display: flex;
@@ -390,6 +391,53 @@ main {
   background-color: #ddd;
   border-radius: 8px;
   width: 100%;
+}
+
+/* ANIME DETAILS */
+.details__container {
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+.back__button {
+  color: #555;
+}
+.details__button {
+  padding: 0 48px;
+  margin-bottom: 16px;
+  background-color: #f5f5f5;
+}
+/* SELECTED */
+.selected__anime {
+  display: flex;
+  padding: 0 48px;
+}
+.selected__anime--container {
+  align-items: flex-start;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  min-width: 270px;
+  padding: 24px 8px;
+  width: 30%;
+}
+.selected__anime--container img {
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 30%);
+  width: 100%;
+}
+.anime__selected--description {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 70%;
+}
+.anime__selected--year,
+.anime__selected--title,
+.anime__selected--popularity,
+.anime__selected--overview,
+.anime__selected--score {
+  color: #555;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 1240px) {

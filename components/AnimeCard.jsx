@@ -1,12 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function AnimeCard({ anime }) {
-  async function fetchAnime(query) {
-    const { data } = await axios.get(
-      `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=1`
-    );
-  }
   return (
     <div className="anime__wrapper">
       <div className="anime__card">
@@ -15,8 +9,7 @@ export default function AnimeCard({ anime }) {
         </figure>
         <div className="anime__description">
           <div className="anime__title">{anime.title}</div>
-
-          <Link to="/details">
+          <Link to={`/details/${anime.mal_id}`}>
             <button className="anime__button">See details</button>
           </Link>
         </div>
