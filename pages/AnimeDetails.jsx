@@ -19,6 +19,7 @@ export default function AnimeDetails() {
       setAnimeDetails(data.data);
       setAnimeImg(data.data.images.jpg);
       setDate(data.data.aired);
+      return data;
     }
     getDetails(mal_id);
   }, [mal_id]);
