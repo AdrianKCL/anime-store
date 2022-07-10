@@ -10,19 +10,18 @@ export default function AnimeDetails() {
   const [animeImg, setAnimeImg] = useState([]);
   const [date, setDate] = useState([]);
   const { mal_id } = useParams();
-  useEffect(
-    () =>
-      async function getDetails(animeId) {
-        const { data } = await axios.get(
-          `https://api.jikan.moe/v4/anime/${animeId || mal_id}`
-        );
-        console.log(data.data);
-        setAnimeDetails(data.data);
-        setAnimeImg(data.data.images.jpg);
-        setDate(data.data.aired);
-      },
-    [mal_id]
-  );
+  useEffect(() => {
+    async function getDetails(animeId) {
+      const { data } = await axios.get(
+        `https://api.jikan.moe/v4/anime/${animeId || mal_id}`
+      );
+      console.log(data.data);
+      setAnimeDetails(data.data);
+      setAnimeImg(data.data.images.jpg);
+      setDate(data.data.aired);
+    }
+    getDetails(mal_id);
+  }, [mal_id]);
 
   return (
     <div className="details__container">

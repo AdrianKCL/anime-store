@@ -5,7 +5,9 @@ import axios from "axios";
 
 export default function ({ search, setSearch, animeList, setAnimeList }) {
   const [loading, setLoading] = useState();
-
+  useEffect(() => {
+    fetchAnime;
+  }, []);
   async function fetchAnime(query) {
     setLoading(true);
     const { data } = await axios.get(
@@ -14,9 +16,7 @@ export default function ({ search, setSearch, animeList, setAnimeList }) {
     setLoading(false);
     setAnimeList(data.results);
   }
-  useEffect(() => {
-    fetchAnime;
-  }, []);
+
   const handleSearch = (e) => {
     e.preventDefault();
     fetchAnime(search);
