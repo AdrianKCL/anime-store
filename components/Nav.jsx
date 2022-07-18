@@ -33,12 +33,9 @@ export default function Nav() {
           </Link>
         </li>
         <li className="nav__list">
-          <Link
-            to="/contact"
-            className="nav__link link__hover-effect link__hover-effect no-cursor"
-          >
+          <div className="nav__link link__hover-effect link__hover-effect no-cursor">
             Contact
-          </Link>
+          </div>
         </li>
       </ul>
 
