@@ -11,7 +11,7 @@ export default function ({ search, setSearch, animeList, setAnimeList }) {
   async function fetchAnime(query) {
     setLoading(true);
     const { data } = await axios.get(
-      `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=8`
+      `https://api.jikan.moe/v4/search/anime?q=${query}&order_by=title&sort=asc&limit=8`
     );
     setLoading(false);
     setAnimeList(data.results);
